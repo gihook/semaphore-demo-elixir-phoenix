@@ -67,4 +67,8 @@ config :phoenix, :stacktrace_depth, 20
 config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
-config :sema, Sema.Repo, database: "sema_dev"
+config :sema, Sema.Repo,
+  database: "sema",
+  username: "postgres",
+  password: "mysecretpassword",
+  hostname: "localhost"
